@@ -21,7 +21,9 @@ android {
             cmake {
                 // Tell CMake where to find cdep-generated glue modules
                 arguments "-Dcdep-dependencies_DIR=../.cdep/modules",
-                        "-DCMAKE_ANDROID_STL_TYPE=c++_static"
+                        "-DANDROID_STL=c++_static",
+                        "-DCMAKE_CXX_FLAGS=-std=c++11",
+                        "-DANDROID_TOOLCHAIN=clang"
             }
         }
 

@@ -1,3 +1,4 @@
+.cdep
 .gradle
 .idea
 **/*.iml
@@ -7,3 +8,4 @@ build
 .externalNativeBuild
 libwebp
 .DS_Store
+
